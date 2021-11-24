@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\EC-TH2012-J.dll.config
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\EC-TH2012-J.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\EC-TH2012-J.pdb
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\en\EC-TH2012-J.resources.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\CrystalDecisions.Shared.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\GuitarShop.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.resources
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.vn.resources
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.en.resources
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\GuitarShop.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\GuitarShop.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\en\EC-TH2012-J.resources.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\GuitarShop.csproj.CopyComplete
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\EC-TH2012-J.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\EC-TH2012-J.pdb

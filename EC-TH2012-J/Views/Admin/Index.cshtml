@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class=" row">
+    <div class="col-md-3 col-sm-3 col-xs-6">
+        <a data-toggle="tooltip" class="well top-block" href="#">
+            <i class="glyphicon glyphicon-user blue"></i>
+            <div>Số khách hàng đã đăng ký</div>
+            <div>50</div>
+        </a>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6">
+        <a data-toggle="tooltip" title="4 new pro members." class="well top-block" href="#">
+            <i class="glyphicon glyphicon-star green"></i>
+            <div>Số đơn đặt hàng thành công</div>
+            <div>228</div>
+            
+        </a>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6">
+        <a data-toggle="tooltip" title="$34 new sales." class="well top-block" href="#">
+            <i class="glyphicon glyphicon-shopping-cart yellow"></i>
+            <div>Doanh thu </div>
+            <div>$13320</div>
+        </a>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6">
+        <a data-toggle="tooltip" title="12 new messages." class="well top-block" href="#">
+            <i class="glyphicon glyphicon-envelope red"></i>
+            <div>Số bình luận</div>
+            <div>25</div>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="box col-md-4">
+        <div class="box-inner">
+            <div class="box-header well">
+                <h2><i class="glyphicon glyphicon-th"></i> Khách hàng mới</h2>
+                <div class="box-icon">
+                    <a href="#" class="btn btn-setting btn-round btn-default">
+                        <i class="glyphicon glyphicon-cog"></i>
+                    </a>
+                    <a href="#" class="btn btn-minimize btn-round btn-default">
+                        <i class="glyphicon glyphicon-chevron-up"></i>
+                    </a>
+                    <a href="#" class="btn btn-close btn-round btn-default">
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-content">
+                <ul class="dashboard-list">
+                    @if (ViewBag.KhachHang != null)
+                    {
+                        <li>
+                            <strong>Fullname:</strong>@ViewBag.KhachHang.HoTen<br>
+                            <strong>Email:</strong>@ViewBag.KhachHang.Email<br>
+                            <strong>Address:</strong>@ViewBag.KhachHang.DiaChi<br>
+                            <strong>Phone number: </strong> <span class="label-success label label-default">@ViewBag.KhachHang.PhoneNumber</span>
+                        </li>
+                    }
+
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <!--/span-->
+    <div class="box col-md-4">
+        <div class="box-inner">
+            <div class="box-header well" data-original-title="">
+                <h2><i class="glyphicon glyphicon-user"></i> Đơn hàng mới</h2>
+                <div class="box-icon">
+                    <a href="#" class="btn btn-minimize btn-round btn-default">
+                        <i class="glyphicon glyphicon-chevron-up"></i>
+                    </a>
+                    <a href="#" class="btn btn-close btn-round btn-default">
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-content">
+                <div class="box-content">
+                    <ul class="dashboard-list">
+                        @if (ViewBag.DonHang != null)
+                        {
+                            foreach (var item in ViewBag.DonHang as IEnumerable<EC_TH2012_J.Models.DonHangKH>)
+                                {
+                                    <li>
+                                    <a href="#">
+                                        <img class="dashboard-avatar" alt="Usman"
+                                             src="http://www.gravatar.com/avatar/f0ea51fa1e4fae92608d8affee12f67b.png?s=50">
+                                    </a>
+                                    <strong>Mã KH:@item.MaDH</strong><br>
+                                    <strong>Thời gian đặt:</strong> @item.NgayDatMua<br>
+                                    <strong>Địa chỉ: </strong> <span class="label-success label label-default">@item.Diachi</span>
+                                </li>
+                                } 
+                        }
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/span-->
+    <div class="box col-md-4">
+        <div class="box-inner">
+            <div class="box-header well" data-original-title="">
+                <h2><i class="glyphicon glyphicon-list-alt"></i> Bình luận mới</h2>
+                <div class="box-icon">
+                    <a href="#" class="btn btn-minimize btn-round btn-default">
+                        <i class="glyphicon glyphicon-chevron-up"></i>
+                    </a>
+                    <a href="#" class="btn btn-close btn-round btn-default">
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-content">
+                <ul class="dashboard-list">
+                    @if(ViewBag.BinhLuan != null)
+                    {
+                            <li>
+                                @*<strong>Chủ đề:</strong>@ViewBag.BinhLuan.sanpham<br>*@
+                                <strong>Người bình:</strong>@ViewBag.BinhLuan.HoTen<br>
+                                <strong>Thời gian bình:</strong>@ViewBag.BinhLuan.NgayDang<br>
+                                <strong>Nội dung: </strong> <span class="label-success label label-default">@ViewBag.BinhLuan.NoiDung</span>
+                            </li>
+                       
+                    }
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!--/span-->
+</div><!--/row-->

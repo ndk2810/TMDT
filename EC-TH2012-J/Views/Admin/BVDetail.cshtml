@@ -1,0 +1,22 @@
+﻿@model EC_TH2012_J.Models.BaiViet
+
+<div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" onclick="closeDialog();">×</button>
+                <h3>@Model.Trang1.TenTrang - Chi tiết về @Model.TieuDe </h3>
+            </div>
+            <div class="modal-body">
+                @Html.TextAreaFor(@Html.Raw(@Model.NoiDung), new { rows = 10, columns = 40 })
+                    
+            </div>
+            @*<div class="modal-footer">
+                <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
+            </div>*@
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,55 @@
+﻿@model EC_TH2012_J.Models.LoginViewModel
+
+<h2 class="bordered">Đăng nhập</h2>
+
+<style>
+    .wrapper-log{
+        text-align: center;
+        font-family: Arial;
+    }
+    .log-input {
+        margin-left: 2%;
+    }
+    .log-label {
+        text-align: left;
+        font-weight: bold;
+    }
+    .log-button {
+        background-color: #59b210;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        margin-top: 1%;
+        padding: 1.5% 2%;
+        width: 25%;
+        font-weight: bold;
+    }
+</style>
+<div class="wrapper-log">
+    @using (Html.BeginForm("Login", "Account", new { returnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "login-form cf-style-1", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <div class="field-row">
+            @Html.LabelFor(m => m.UserName, new { @class = "log-label" })
+            @Html.TextBoxFor(m => m.UserName, new { @class = "log-input" })
+            @Html.ValidationMessageFor(m => m.UserName)
+        </div>
+        <div class="field-row">
+            @Html.LabelFor(m => m.Password, new { @class = "log-label" })
+            @Html.PasswordFor(m => m.Password, new { @class = "log-input" })
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+        <div class="field-row clearfix">
+            <span class="pull-left">
+                @Html.CheckBoxFor(m => m.RememberMe, new { @class = "log-checbox auto-width inline" })<span class="content-color bold"> Duy trì đăng nhập</span>
+            </span>
+            <span class="pull-right">
+                <a href="#" class="content-color bold">Quên mật khẩu ?</a>
+            </span>
+        </div>
+        <div class="buttons-holder">
+            <input type="submit" value="Đăng nhập" class="log-button huge" />
+        </div>
+    }
+</div>

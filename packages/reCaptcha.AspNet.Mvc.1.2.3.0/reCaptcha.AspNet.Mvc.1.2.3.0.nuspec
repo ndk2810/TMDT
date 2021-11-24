@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>reCaptcha.AspNet.Mvc</id>
+    <version>1.2.3.0</version>
+    <title>reCaptcha ASP.NET MVC</title>
+    <authors>Kobi Kadosh</authors>
+    <owners>Kobi Kadosh</owners>
+    <projectUrl>https://www.google.com/recaptcha</projectUrl>
+    <iconUrl>https://www.gstatic.com/recaptcha/api2/logo_48.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Google reCaptcha ASP.NET MVC</description>
+    <summary />
+    <releaseNotes>* Updated major version - but didn't broke the current interface - safe to update
+      * Add multiple instance on one page support - #11</releaseNotes>
+    <tags>captcha google recaptcha asp.net mvc</tags>
+    <dependencies>
+      <dependency id="JetBrains.Annotations" version="8.0.5" />
+      <dependency id="Newtonsoft.Json" version="7.0.1" />
+      <dependency id="WebActivatorEx" version="2.0.3" />
+    </dependencies>
+  </metadata>
+</package>

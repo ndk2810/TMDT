@@ -1,0 +1,305 @@
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\EC-TH2012-J.dll.config
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\EC-TH2012-J.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\EC-TH2012-J.pdb
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\en\EC-TH2012-J.resources.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Antlr3.Runtime.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\EntityFramework.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\EntityFramework.SqlServer.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\EPPlus.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\itextsharp.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\JetBrains.Annotations.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Core.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Owin.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Host.SystemWeb.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.Cookies.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.Facebook.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.Google.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.OAuth.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.Twitter.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Web.Infrastructure.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Owin.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\PagedList.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\PagedList.Mvc.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Recaptcha.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Recaptcha.MvcModel.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Net.Http.Formatting.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Cors.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Helpers.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Http.Cors.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Http.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Http.WebHost.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Mvc.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Optimization.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Razor.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.WebPages.Deployment.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.WebPages.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.WebPages.Razor.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\WebActivatorEx.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\WebGrease.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Antlr3.Runtime.pdb
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\EntityFramework.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\EntityFramework.SqlServer.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\EPPlus.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\JetBrains.Annotations.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Core.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Owin.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Host.SystemWeb.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.Cookies.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.Facebook.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.Google.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.OAuth.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Microsoft.Owin.Security.Twitter.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\PagedList.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\PagedList.Mvc.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\Recaptcha.pdb
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Net.Http.Formatting.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Helpers.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Http.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Http.Cors.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Http.WebHost.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Mvc.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Optimization.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.Razor.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.WebPages.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.WebPages.Deployment.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\bin\System.Web.WebPages.Razor.xml
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.resources
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.vn.resources
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.en.resources
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\obj\Debug\MobileShop.csproj.GenerateResource.Cache
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\obj\Debug\en\EC-TH2012-J.resources.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\obj\Debug\EC-TH2012-J.dll
+I:\.Net project\EC-TH2012-J\EC-TH2012-J\obj\Debug\EC-TH2012-J.pdb
+D:\download\MobiShop\EC-TH2012-J\obj\Debug\MobileShop.csprojAssemblyReference.cache
+D:\download\MobiShop\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.resources
+D:\download\MobiShop\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.vn.resources
+D:\download\MobiShop\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.en.resources
+D:\download\MobiShop\EC-TH2012-J\obj\Debug\MobileShop.csproj.GenerateResource.cache
+D:\download\MobiShop\EC-TH2012-J\obj\Debug\MobileShop.csproj.CoreCompileInputs.cache
+D:\download\MobiShop\EC-TH2012-J\obj\Debug\EC-TH2012-J.dll
+D:\download\MobiShop\EC-TH2012-J\obj\Debug\EC-TH2012-J.pdb
+D:\download\MobiShop\EC-TH2012-J\bin\EC-TH2012-J.dll.config
+D:\download\MobiShop\EC-TH2012-J\bin\EC-TH2012-J.dll
+D:\download\MobiShop\EC-TH2012-J\bin\EC-TH2012-J.pdb
+D:\download\MobiShop\EC-TH2012-J\bin\en\EC-TH2012-J.resources.dll
+D:\download\MobiShop\EC-TH2012-J\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\download\MobiShop\EC-TH2012-J\bin\CrystalDecisions.ReportSource.dll
+D:\download\MobiShop\EC-TH2012-J\bin\CrystalDecisions.Shared.dll
+D:\download\MobiShop\EC-TH2012-J\bin\Antlr3.Runtime.pdb
+D:\download\MobiShop\EC-TH2012-J\bin\EntityFramework.xml
+D:\download\MobiShop\EC-TH2012-J\bin\EntityFramework.SqlServer.xml
+D:\download\MobiShop\EC-TH2012-J\bin\EPPlus.xml
+D:\download\MobiShop\EC-TH2012-J\bin\JetBrains.Annotations.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Core.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.Cookies.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.Facebook.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.Google.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.OAuth.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.Twitter.xml
+D:\download\MobiShop\EC-TH2012-J\bin\PagedList.xml
+D:\download\MobiShop\EC-TH2012-J\bin\PagedList.Mvc.xml
+D:\download\MobiShop\EC-TH2012-J\bin\Recaptcha.pdb
+D:\download\MobiShop\EC-TH2012-J\bin\System.Net.Http.Formatting.xml
+D:\download\MobiShop\EC-TH2012-J\bin\System.Web.Helpers.xml
+D:\download\MobiShop\EC-TH2012-J\bin\System.Web.Http.xml
+D:\download\MobiShop\EC-TH2012-J\bin\System.Web.Http.Cors.xml
+D:\download\MobiShop\EC-TH2012-J\bin\System.Web.Http.WebHost.xml
+D:\download\MobiShop\EC-TH2012-J\bin\System.Web.Mvc.xml
+D:\download\MobiShop\EC-TH2012-J\bin\System.Web.Optimization.xml
+D:\download\MobiShop\EC-TH2012-J\bin\System.Web.Razor.xml
+D:\download\MobiShop\EC-TH2012-J\bin\System.Web.WebPages.xml
+D:\download\MobiShop\EC-TH2012-J\bin\System.Web.WebPages.Deployment.xml
+D:\download\MobiShop\EC-TH2012-J\bin\System.Web.WebPages.Razor.xml
+D:\download\MobiShop\EC-TH2012-J\obj\Debug\en\EC-TH2012-J.resources.dll
+D:\download\MobiShop\EC-TH2012-J\obj\Debug\MobileShop.csproj.CopyComplete
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\EC-TH2012-J.dll.config
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\EC-TH2012-J.dll
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\EC-TH2012-J.pdb
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\en\EC-TH2012-J.resources.dll
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\CrystalDecisions.ReportSource.dll
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\CrystalDecisions.Shared.dll
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Antlr3.Runtime.pdb
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\EntityFramework.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\EntityFramework.SqlServer.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\EPPlus.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\JetBrains.Annotations.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.Google.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\PagedList.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\PagedList.Mvc.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\Recaptcha.pdb
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\System.Net.Http.Formatting.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\System.Web.Helpers.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\System.Web.Http.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\System.Web.Http.Cors.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\System.Web.Http.WebHost.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\System.Web.Mvc.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\System.Web.Optimization.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\System.Web.Razor.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\System.Web.WebPages.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\System.Web.WebPages.Deployment.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\bin\System.Web.WebPages.Razor.xml
+D:\DOAN1\MobiShop\EC-TH2012-J\obj\Debug\MobileShop.csprojAssemblyReference.cache
+D:\DOAN1\MobiShop\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.resources
+D:\DOAN1\MobiShop\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.vn.resources
+D:\DOAN1\MobiShop\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.en.resources
+D:\DOAN1\MobiShop\EC-TH2012-J\obj\Debug\MobileShop.csproj.GenerateResource.cache
+D:\DOAN1\MobiShop\EC-TH2012-J\obj\Debug\MobileShop.csproj.CoreCompileInputs.cache
+D:\DOAN1\MobiShop\EC-TH2012-J\obj\Debug\en\EC-TH2012-J.resources.dll
+D:\DOAN1\MobiShop\EC-TH2012-J\obj\Debug\MobileShop.csproj.CopyComplete
+D:\DOAN1\MobiShop\EC-TH2012-J\obj\Debug\EC-TH2012-J.dll
+D:\DOAN1\MobiShop\EC-TH2012-J\obj\Debug\EC-TH2012-J.pdb
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\EC-TH2012-J.dll.config
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\EC-TH2012-J.dll
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\EC-TH2012-J.pdb
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\en\EC-TH2012-J.resources.dll
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\CrystalDecisions.ReportSource.dll
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\CrystalDecisions.Shared.dll
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Antlr3.Runtime.pdb
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\EntityFramework.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\EntityFramework.SqlServer.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\EPPlus.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\JetBrains.Annotations.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.Owin.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.Owin.Security.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.Owin.Security.Google.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\PagedList.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\PagedList.Mvc.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\Recaptcha.pdb
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\System.Net.Http.Formatting.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\System.Web.Helpers.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\System.Web.Http.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\System.Web.Http.Cors.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\System.Web.Http.WebHost.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\System.Web.Mvc.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\System.Web.Optimization.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\System.Web.Razor.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\System.Web.WebPages.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\System.Web.WebPages.Deployment.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\bin\System.Web.WebPages.Razor.xml
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\obj\Debug\MobileShop.csprojAssemblyReference.cache
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.resources
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.vn.resources
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.en.resources
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\obj\Debug\MobileShop.csproj.GenerateResource.cache
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\obj\Debug\MobileShop.csproj.CoreCompileInputs.cache
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\obj\Debug\en\EC-TH2012-J.resources.dll
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\obj\Debug\MobileShop.csproj.CopyComplete
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\obj\Debug\EC-TH2012-J.dll
+D:\DOAN1\DuongHuuThanh\EC-TH2012-J\obj\Debug\EC-TH2012-J.pdb
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\EC-TH2012-J.dll.config
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\EC-TH2012-J.dll
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\EC-TH2012-J.pdb
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\en\EC-TH2012-J.resources.dll
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\CrystalDecisions.Shared.dll
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Antlr3.Runtime.pdb
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\EntityFramework.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\EntityFramework.SqlServer.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\EPPlus.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\JetBrains.Annotations.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.Owin.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.Owin.Security.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\PagedList.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\PagedList.Mvc.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\Recaptcha.pdb
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\System.Net.Http.Formatting.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\System.Web.Helpers.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\System.Web.Http.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\System.Web.Http.Cors.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\System.Web.Http.WebHost.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\System.Web.Mvc.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\System.Web.Optimization.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\System.Web.Razor.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\System.Web.WebPages.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\bin\System.Web.WebPages.Razor.xml
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\obj\Debug\MobileShop.csprojAssemblyReference.cache
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.resources
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.vn.resources
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.en.resources
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\obj\Debug\MobileShop.csproj.GenerateResource.cache
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\obj\Debug\MobileShop.csproj.CoreCompileInputs.cache
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\obj\Debug\en\EC-TH2012-J.resources.dll
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\obj\Debug\MobileShop.csproj.CopyComplete
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\obj\Debug\EC-TH2012-J.dll
+C:\Users\Windows\Downloads\08_DuongHuuThanh\08_DuongHuuThanh\08_DuongHuuThanh_Source\EC-TH2012-J\obj\Debug\EC-TH2012-J.pdb
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\bin\EC-TH2012-J.dll.config
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\bin\EC-TH2012-J.dll
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\bin\EC-TH2012-J.pdb
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\bin\en\EC-TH2012-J.resources.dll
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\bin\CrystalDecisions.Shared.dll
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.resources
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.vn.resources
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.en.resources
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\obj\Debug\MobileShop.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\obj\Debug\MobileShop.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\obj\Debug\en\EC-TH2012-J.resources.dll
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\obj\Debug\MobileShop.csproj.CopyComplete
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\obj\Debug\EC-TH2012-J.dll
+C:\Users\Admin\Desktop\08_DuongHuuThanh\doan\Source\EC-TH2012-J\obj\Debug\EC-TH2012-J.pdb
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\EC-TH2012-J.dll.config
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\EC-TH2012-J.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\EC-TH2012-J.pdb
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\en\EC-TH2012-J.resources.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\bin\CrystalDecisions.Shared.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\MobileShop.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.resources
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.vn.resources
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\EC_TH2012_J.Resource.en.resources
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\MobileShop.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\MobileShop.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\en\EC-TH2012-J.resources.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\MobileShop.csproj.CopyComplete
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\EC-TH2012-J.dll
+C:\Users\Admin\Desktop\NDKhang\Bài TMDT\doan\Source\EC-TH2012-J\obj\Debug\EC-TH2012-J.pdb

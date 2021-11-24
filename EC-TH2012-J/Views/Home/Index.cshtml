@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutFrontEnd.cshtml";
+}
+<div id="top-banner-and-menu" class="homepage2">
+    <div class="container">
+        <div class="col-xs-12">
+            <!-- ========================================== SECTION – HERO ========================================= -->
+     
+
+                    @Html.Action("SlideShowView","GiaoDien")
+
+
+            <!-- ========================================= SECTION – HERO : END ========================================= -->
+        </div>
+    </div>
+</div><!-- /.homepage2 -->
+<!-- ========================================= HOME BANNERS ========================================= -->
+
+<!-- ========================================= HOME BANNERS : END ========================================= -->
+<script src="@Url.Content("~/js/loadmore.js")"></script>
+<div id="products-tab" class="wow fadeInUp">
+    <div class="container">
+        <div class="tab-holder">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#featured" data-toggle="tab">Nổi bật</a></li>
+                <li><a href="#new-arrivals" data-toggle="tab">Mới nhập</a></li>
+                <li><a href="#top-sales" data-toggle="tab">Giảm giá</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="featured">
+                    <div class="product-grid-holder">
+                        <div id="spnoibat">
+                            @Html.Action("SPNoiBat", "Home")
+                        </div>
+                    </div>
+                    @*<div class="loadmore-holder text-center">
+                        <div id="sphotlink">
+                            <a class="btn-loadmore" href='javascript:LoadMorePro(4,"SPNoiBat","#sphotlink","#spnoibat")'>
+                                <i class="fa fa-plus"></i>
+                                Tải thêm
+                            </a>
+                        </div>
+                    </div>*@
+                </div>
+
+            <div class="tab-pane" id="new-arrivals">
+                <div class="product-grid-holder">
+                    <div id="spmoiload">
+                        @Html.Action("SPMoiNhap", "Home")
+                    </div>
+                </div>
+                @*<div class="loadmore-holder text-center">
+                    <div id="spmoilink">
+                        <a class="btn-loadmore" href='javascript:LoadMorePro(4,"SPMoiNhap","#spmoilink","#spmoiload")'>
+                            <i class="fa fa-plus"></i>
+                            Tải thêm
+                        </a>
+                    </div>
+                </div>*@
+            </div>
+
+            <div class="tab-pane" id="top-sales">
+                <div class="product-grid-holder">
+                    <div id="spkmload">
+                        @Html.Action("SPKhuyenMai", "Home")
+                    </div>
+                </div>
+                @*<div class="loadmore-holder text-center">
+                    <div id="spkmlink">
+                        <a class="btn-loadmore" href='javascript:LoadMorePro(4,"SPKhuyenMai","#spkmlink","#spkmload")'>
+                            <i class="fa fa-plus"></i>
+                            Tải thêm
+                        </a>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- ========================================= BEST SELLERS ========================================= -->
+<section id="bestsellers" class="color-bg wow fadeInUp">
+    <div class="container">
+        <h1 class="section-title">Bán chạy nhất</h1>
+
+        @Html.Action("SPBanChay","Home")
+    </div><!-- /.container -->
+</section><!-- /#bestsellers -->
+<!-- ========================================= BEST SELLERS : END ========================================= -->
+<!-- ========================================= RECENTLY VIEWED ========================================= -->
+
+<!-- ========================================= RECENTLY VIEWED : END ========================================= -->
+<!-- ========================================= TOP BRANDS ========================================= -->
+
+<!-- ========================================= TOP BRANDS : END ========================================= --> 
