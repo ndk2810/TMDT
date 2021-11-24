@@ -68,12 +68,14 @@
                         </li>
                     </ul>
                     <div class="buttons-holder">
-                        <a class="le-button big" href='@Url.Action("Checkout", "Home")'>Chấp thuận</a>
+                        @*UNCOMMENT ĐỂ UNLOCK THANH TOÁN
+                        <a class="le-button big" href='@Url.Action("Checkout", "Home")'>Chấp thuận</a>*@
+                        <a class="le-button big" href='#'>Thanh toán</a>
                         <a class="simple-link block" href='@Url.Action("Index","Home")'>Tiếp tục mua hàng</a>
                     </div>
                 </div>
             </div><!-- /.widget -->
-            <div id="cupon-widget" class="widget">
+            <!--<div id="cupon-widget" class="widget">
                 <h1 class="border">Mã khuyến mãi</h1>
                 <div class="body">
                     <form>
@@ -83,7 +85,7 @@
                         </div>
                     </form>
                 </div>
-            </div><!-- /.widget -->
+            </div>--><!-- /.widget -->
         </div><!-- /.sidebar -->
         <!-- ========================================= SIDEBAR : END ========================================= -->
     </div>
