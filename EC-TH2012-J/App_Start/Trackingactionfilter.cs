@@ -18,8 +18,8 @@ namespace EC_TH2012_J.App_Start
                 var temp = generateTracking(filterContext,maSP);
                 // them san pham da xem
                 SanPhamModel sp = new SanPhamModel();
-                ManagerObiect.getIntance().Themsanphammoixem(sp.getSanPham(maSP));
-                ManagerObiect.getIntance().SaveTrackingLog(temp);
+                ManagerObject.getIntance().Themsanphammoixem(sp.getSanPham(maSP));
+                ManagerObject.getIntance().SaveTrackingLog(temp);
             }
         }
 
@@ -27,7 +27,7 @@ namespace EC_TH2012_J.App_Start
         {
             Trackingaction temp = new Trackingaction()
             {
-                Username = (ManagerObiect.getIntance().userName ?? " "),
+                Username = (ManagerObject.getIntance().userName ?? " "),
                 MaSP = maSP,
                 Ngaythuchien = DateTime.Now,
                 Controller = filterContext.ActionDescriptor.ControllerDescriptor.ControllerName,

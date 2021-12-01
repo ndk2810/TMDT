@@ -1,10 +1,10 @@
 ﻿using EC_TH2012_J.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using Stripe;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
+using System.Web.Configuration;
 
 namespace EC_TH2012_J.Controllers
 {
@@ -22,19 +22,26 @@ namespace EC_TH2012_J.Controllers
         {
             return View();
         }
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
 
+        [HttpPost]
+        public ActionResult Charge(string stripeToken, string stripeEmail)
+        {
+            //Stripe.StripeConfiguration.ApiKey = "pk_test_51IzjQtAHeeyUAi3R0NUAODbvvHUsbSnR28rxbiSZOC2MVmk1M5d835wj7Nh6GwMCERYO4cgUwVt7V9elmc27uFC7002UAaioYH";
+            Stripe.StripeConfiguration.ApiKey = "sk_test_51IzjQtAHeeyUAi3RSHbt1sPob40b8icOzAMQYELld6hLGtJvMS1oqZtcvx0vcetqLSQMrgLS8nPeurvLJVMI35Mb00vo0mXV7B";
+
+            var myCharge = new Stripe.ChargeCreateOptions();
+            // always set these properties
+            myCharge.Amount = 500;
+            myCharge.Currency = "USD";
+            myCharge.ReceiptEmail = stripeEmail;
+            myCharge.Description = "Sample Charge";
+            myCharge.Source = stripeToken;
+            myCharge.Capture = true;
+            var chargeService = new Stripe.ChargeService();
+            Charge stripeCharge = chargeService.Create(myCharge);
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
         //chuyen locale
         public ActionResult ChangeLanguage(string lang)
         {
@@ -52,7 +59,7 @@ namespace EC_TH2012_J.Controllers
         
         public ActionResult Cart()
         {
-            return View(ManagerObiect.getIntance().giohang);
+            return View(ManagerObject.getIntance().giohang);
         }
 
         [AuthLog(Roles = "Quản trị viên,Nhân viên,Khách hàng")]
@@ -78,10 +85,14 @@ namespace EC_TH2012_J.Controllers
         }
         public ActionResult Checkout()
         {
+            ViewBag.StripePublishKey = WebConfigurationManager.AppSettings["stripePublishableKey"];
+;
             if (Request.IsAuthenticated)
             {
                 DonhangKHModel dh = new DonhangKHModel();
                 dh.nguoiMua = dh.Xemttnguoidung(User.Identity.GetUserId());
+                Giohang giohang = ManagerObject.getIntance().giohang;
+                ViewBag.GioHang = giohang;
                 Donhangtongquan dhtq = new Donhangtongquan()
                 {
                     buyer = dh.nguoiMua.HoTen,
@@ -104,7 +115,7 @@ namespace EC_TH2012_J.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 DonhangKHModel dhmodel = new DonhangKHModel();
-                dhmodel.Luudonhang(dh, User.Identity.GetUserId(), ManagerObiect.getIntance().giohang);
+                dhmodel.Luudonhang(dh, User.Identity.GetUserId(), ManagerObject.getIntance().giohang);
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -167,7 +178,7 @@ namespace EC_TH2012_J.Controllers
         }
         public ActionResult SPMoiXem()
         {
-            return PartialView("_RecentlyViewPartial", ManagerObiect.getIntance().Laydanhsachsanphammoixem());
+            return PartialView("_RecentlyViewPartial", ManagerObject.getIntance().Laydanhsachsanphammoixem());
         }
 
     }

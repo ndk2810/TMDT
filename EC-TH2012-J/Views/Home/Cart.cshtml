@@ -5,7 +5,7 @@
 }
 <section id="cart-page">
     <div class="container">
-        <!-- ========================================= CONTENT ========================================= -->
+
         <div class="col-xs-12 col-md-9 items-holder no-margin">
             @for (int i = 0; i < Model.getGiohang().Count; i++)
             {
@@ -38,11 +38,10 @@
                         </div>
                         <a class="close-btn" href="javascript:;" onclick="xoagiohang(@i)"></a>
                     </div>
-                </div><!-- /.cart-item -->
+                </div>
             }
         </div>
-        <!-- ========================================= CONTENT : END ========================================= -->
-        <!-- ========================================= SIDEBAR ========================================= -->
+
         <div class="col-xs-12 col-md-3 no-margin sidebar ">
             <div class="widget cart-summary">
                 <h1 class="border">Giỏ hàng</h1>
@@ -68,9 +67,7 @@
                         </li>
                     </ul>
                     <div class="buttons-holder">
-                        @*UNCOMMENT ĐỂ UNLOCK THANH TOÁN
-                        <a class="le-button big" href='@Url.Action("Checkout", "Home")'>Chấp thuận</a>*@
-                        <a class="le-button big" href='#'>Thanh toán</a>
+                        <a class="le-button big" href='@Url.Action("Checkout", "Home")'>Chấp thuận</a>
                         <a class="simple-link block" href='@Url.Action("Index","Home")'>Tiếp tục mua hàng</a>
                     </div>
                 </div>

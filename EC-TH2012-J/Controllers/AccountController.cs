@@ -58,7 +58,7 @@ namespace EC_TH2012_J.Controllers
                 if (user != null)
                 {
                     await SignInAsync(user, model.RememberMe);
-                    ManagerObiect.getIntance().userName = model.UserName;
+                    ManagerObject.getIntance().userName = model.UserName;
                     return RedirectToLocal(returnUrl);
                     //return RedirectToLocal(returnUrl);
                 }
@@ -105,7 +105,7 @@ namespace EC_TH2012_J.Controllers
                     NhaCungCapModel ncc = new NhaCungCapModel();
                     ncc.ThemNCC(model, user.Id);
                     await SignInAsync(user, isPersistent: false);
-                    ManagerObiect.getIntance().userName = model.UserName;
+                    ManagerObject.getIntance().userName = model.UserName;
                     return RedirectToLocal("/Auction/index");
                 }
                 else
@@ -139,7 +139,7 @@ namespace EC_TH2012_J.Controllers
                     UserManager.AddToRole(user.Id, "Khách hàng");
                     //UserManager.AddToRole(user.Id, "Nhà cung cấp");
                     await SignInAsync(user, isPersistent: false);
-                    ManagerObiect.getIntance().userName = model.UserName;
+                    ManagerObject.getIntance().userName = model.UserName;
                     //SendMailConfirm(user.Id);
                     //return RedirectToAction("Confirm", "Account", new { Email = user.Email });
                     return RedirectToAction("Index", "Home");

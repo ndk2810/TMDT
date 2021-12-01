@@ -58,6 +58,7 @@ namespace EC_TH2012_J.Controllers
 
         [AuthLog(Roles = "Quản trị viên,Nhân viên")]
         [HttpPost]
+        [ValidateInput(false)]
         [ValidateAntiForgeryToken]
         public ActionResult EditSP([Bind(Include = "MaSP,TenSP,LoaiSP,HangSX,XuatXu,GiaGoc,MoTa,SoLuong,isnew,ishot")] SanPham sanpham, HttpPostedFileBase ad, HttpPostedFileBase an, HttpPostedFileBase ak)
         {
@@ -113,6 +114,7 @@ namespace EC_TH2012_J.Controllers
 
         [AuthLog(Roles = "Quản trị viên,Nhân viên")]
         [HttpPost]
+        [ValidateInput(false)]
         [ValidateAntiForgeryToken]
         public ActionResult ThemSP([Bind(Include = "TenSP,LoaiSP,HangSX,XuatXu,GiaGoc,MoTa,SoLuong,isnew,ishot")] SanPham sanpham, HttpPostedFileBase ad, HttpPostedFileBase an, HttpPostedFileBase ak)
         {

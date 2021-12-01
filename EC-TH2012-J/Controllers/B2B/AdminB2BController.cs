@@ -66,7 +66,7 @@ namespace EC_TH2012_J.Controllers
         // luu consumer_key
         public JsonResult Saveconsumer_key(string consumer_key)
         {
-            ManagerObiect.consumer_key = consumer_key;
+            ManagerObject.consumer_key = consumer_key;
             return Json("success");
         }
         public ActionResult GetTokenRequest(string verifier_token, string request_token)
@@ -81,22 +81,22 @@ namespace EC_TH2012_J.Controllers
                     );
                     var model = new
                     {
-                        consumer_key = ManagerObiect.consumer_key,
+                        consumer_key = ManagerObject.consumer_key,
                         verifier_token = verifier_token,
                         request_token = request_token
                     };
                     HttpResponseMessage response = client.PostAsJsonAsync(
-                        ManagerObiect.configAPI.LinkAccessToken,
+                        ManagerObject.configAPI.LinkAccessToken,
                         model
                     ).Result;
                     if (response.StatusCode == HttpStatusCode.OK)
                     {
                         var value = response.Content.ReadAsAsync<Token>().Result;
-                        ManagerObiect.Token = value.access_token;
+                        ManagerObject.Token = value.access_token;
                     }
                     else
                         ViewBag.thongbao = response.StatusCode.ToString();
-                    return Redirect(ManagerObiect.reDirectUrl);
+                    return Redirect(ManagerObject.reDirectUrl);
                 }
             }
             return RedirectToAction("","");
@@ -106,7 +106,7 @@ namespace EC_TH2012_J.Controllers
         [AuthLog(Roles = "Quản trị viên,Nhân viên")]
         public ActionResult GetOrders(string user, string pass, string supplier_key)
         {
-            if(ManagerObiect.DoitacID != null)
+            if(ManagerObject.DoitacID != null)
             {
                 using(HttpClient client = new HttpClient())
                 {
@@ -116,7 +116,7 @@ namespace EC_TH2012_J.Controllers
 
                     //client.BaseAddress = new Uri(ManagerObiect.GetBaseUrl(ManagerObiect.configAPI.LinkAccessToken));
 
-                    HttpResponseMessage response = client.GetAsync(ManagerObiect.configAPI.LinkKiemTraLuongTon + supplier_key).Result;
+                    HttpResponseMessage response = client.GetAsync(ManagerObject.configAPI.LinkKiemTraLuongTon + supplier_key).Result;
                     if (response.IsSuccessStatusCode)
                     {
                         string code = response.StatusCode.ToString();
@@ -132,13 +132,13 @@ namespace EC_TH2012_J.Controllers
         [AuthLog(Roles = "Quản trị viên,Nhân viên")]
         public ActionResult GetOrdersOauth(string access_token,string supplier_key)
         {
-            if (ManagerObiect.DoitacID != null)
+            if (ManagerObject.DoitacID != null)
             {
                 using (HttpClient client = new HttpClient())
                 {
                     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", access_token);
 
-                    HttpResponseMessage response = client.GetAsync(ManagerObiect.configAPI.LinkKiemTraLuongTon + supplier_key).Result;
+                    HttpResponseMessage response = client.GetAsync(ManagerObject.configAPI.LinkKiemTraLuongTon + supplier_key).Result;
                     if (response.IsSuccessStatusCode)
                     {
                         string code = response.StatusCode.ToString();
@@ -148,14 +148,14 @@ namespace EC_TH2012_J.Controllers
                     }
                 }
             }
-            ManagerObiect.Token = "";
+            ManagerObject.Token = "";
             return Content("Error");
         }
         public ActionResult Laysoluongton(string doiacID)
         {
-            ManagerObiect.DoitacID = doiacID;
-            ManagerObiect.configAPI = new ConfigAPIModel().getConfig(doiacID);
-            if (ManagerObiect.configAPI == null)
+            ManagerObject.DoitacID = doiacID;
+            ManagerObject.configAPI = new ConfigAPIModel().getConfig(doiacID);
+            if (ManagerObject.configAPI == null)
             {
                 return RedirectToAction("ConfigAPI", new { MaNCC = doiacID });
             }
@@ -164,10 +164,10 @@ namespace EC_TH2012_J.Controllers
         }
         public ActionResult GetAccesstoken(string redirectUrl)
         {
-            if(ManagerObiect.configAPI != null)
+            if(ManagerObject.configAPI != null)
             {
-                ManagerObiect.reDirectUrl = redirectUrl;
-                ViewBag.action = ManagerObiect.configAPI.LinkRequesrToken;
+                ManagerObject.reDirectUrl = redirectUrl;
+                ViewBag.action = ManagerObject.configAPI.LinkRequesrToken;
                 return View();
             }
             return RedirectToAction("", "");
@@ -200,9 +200,9 @@ namespace EC_TH2012_J.Controllers
         // Xác nhận giao hàng
         public ActionResult XemXacNhanGiaoHang(string doiTacID)
         {
-            ManagerObiect.DoitacID = doiTacID;
-            ManagerObiect.configAPI = new ConfigAPIModel().getConfig(doiTacID);
-            if (ManagerObiect.configAPI == null)
+            ManagerObject.DoitacID = doiTacID;
+            ManagerObject.configAPI = new ConfigAPIModel().getConfig(doiTacID);
+            if (ManagerObject.configAPI == null)
             {
                 return RedirectToAction("ConfigAPI", new { MaNCC = doiTacID });
             }
@@ -256,7 +256,7 @@ namespace EC_TH2012_J.Controllers
                             product_date = a.product_date
                         };
                         HttpResponseMessage response = client.PostAsJsonAsync(
-                            ManagerObiect.configAPI.LinkXacNhanGiaoHang,
+                            ManagerObject.configAPI.LinkXacNhanGiaoHang,
                             model
                         ).Result;
                         if (response.StatusCode == HttpStatusCode.OK)
@@ -295,7 +295,7 @@ namespace EC_TH2012_J.Controllers
                         product_date = a.product_date
                     };
                     HttpResponseMessage response = client.PostAsJsonAsync(
-                        ManagerObiect.configAPI.LinkXacNhanGiaoHang,
+                        ManagerObject.configAPI.LinkXacNhanGiaoHang,
                         model
                     ).Result;
                     if (response.StatusCode == HttpStatusCode.OK)

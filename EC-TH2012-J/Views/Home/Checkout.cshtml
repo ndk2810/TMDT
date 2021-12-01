@@ -50,34 +50,39 @@
                 </div>
             </div>
             <section id="shipping-address">
-                <h2 class="border h1">shipping address</h2>
-                <div class="row field-row">
-                    <div class="col-xs-12">
-                        <input class="le-checkbox big" type="checkbox" />
-                        <a class="simple-link bold" href="#">ship to different address?</a>
-                    </div>
-                </div><!-- /.field-row -->
+                <h2 class="border h1">Phương thức thanh toán</h2>
             </section><!-- /#shipping-address -->
              
 
             <div id="payment-method-options">
-                    <div class="payment-method-option">
+                    @*<div class="payment-method-option">
                         <input class="le-radio" type="radio" name="group2" value="Direct">
                         <div class="radio-label bold ">
-                            Direct Bank Transfer<br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum tempus elit, vestibulum vestibulum erat ornare id.</p>
+                            Thẻ ngân hàng<br>
                         </div>
-                    </div><!-- /.payment-method-option -->
+                    </div>*@
 
                     <div class="payment-method-option">
                         <input class="le-radio" type="radio" name="group2" value="cheque">
-                        <div class="radio-label bold ">cheque payment</div>
+                        <div class="radio-label bold ">Tiền mặt</div>
                     </div><!-- /.payment-method-option -->
 
-                    <div class="payment-method-option">
+                    @*<div class="payment-method-option">
                         <input class="le-radio" type="radio" name="group2" value="paypal">
-                        <div class="radio-label bold ">paypal system</div>
-                    </div><!-- /.payment-method-option -->
+                        <div class="radio-label bold ">PayPal</div>
+                        <form action="/Home/Charge" method="POST">
+                            <article>
+                                <label>Amount: @ViewBag.GioHang.TinhtongtienCart() VND</label>
+                            </article>
+                            <script src="//checkout.stripe.com/v2/checkout.js"
+                                    class="stripe-button"
+                                    data-key="@ViewBag.StripePublishKey"
+                                    data-locale="auto"
+                                    data-description="Sample Charge"
+                                    data-amount="@ViewBag.GioHang.TinhtongtienCart()">
+                            </script>
+                        </form>
+                    </div>*@
             </div><!-- /#payment-method-options -->
 
             <div class="place-order-button">

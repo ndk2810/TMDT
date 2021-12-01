@@ -32,6 +32,7 @@ namespace EC_TH2012_J.Models
         public string HangSX { get; set; }
         public string XuatXu { get; set; }
         public Nullable<decimal> GiaTien { get; set; }
+        [System.Web.Mvc.AllowHtml]
         public string MoTa { get; set; }
         public string AnhDaiDien { get; set; }
         public string AnhNen { get; set; }

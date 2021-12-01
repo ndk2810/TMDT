@@ -14,7 +14,7 @@
             <th>@Html.DisplayNameFor(model => model.First().LoaiSP1.TenLoai)</th>
             <th>@Html.DisplayNameFor(model => model.First().SoLuong)</th>
             <th>@Html.DisplayNameFor(model => model.First().GiaTien)</th>
-            <th style="width:10%">@Html.DisplayNameFor(model => model.First().BarcodeImg)</th>
+            @*<th style="width:10%">@Html.DisplayNameFor(model => model.First().BarcodeImg)</th>*@
             <th>Hành động</th>
         </tr>
     </thead>
@@ -30,9 +30,9 @@
                 <td class="center">@item.LoaiSP1.TenLoai</td>
                 <td class="center">@item.SoLuong</td>
                 <td class="center">@string.Format("{0:0,0}", item.GiaTien) VNĐ</td>
-                @{string ImageUrl = @item.BarcodeImg != null ? "data:image/jpg;base64," +
+                @*@{string ImageUrl = @item.BarcodeImg != null ? "data:image/jpg;base64," +
                 Convert.ToBase64String((byte[])@item.BarcodeImg) : "";}
-                <td class="center"><img src="@ImageUrl"/></td>
+                <td class="center"><img src="@ImageUrl"/></td>*@
                 <td class="center">
                     <a class="btn btn-success" href='javascript:ChiTietItem("@Url.Action("SPDetail", "Admin")","@item.MaSP")'>
                         <i class="glyphicon glyphicon-zoom-in icon-white"></i>

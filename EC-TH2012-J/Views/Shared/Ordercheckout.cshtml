@@ -13,7 +13,7 @@
                     <div class="brand">sony</div>
                 </div>
                 <div class="col-xs-12 col-sm-2 no-margin">
-                    <div class="price">@string.Format("{0:0,0}", @Model.getGiohang()[i].Thanhtien)  Đồng</div>
+                    <div class="price">@string.Format("{0:0,0}", @Model.getGiohang()[i].Thanhtien) VND</div>
                 </div>
             </div><!-- /.order-item -->
         }
@@ -22,24 +22,9 @@
 <div id="total-area" class="row no-margin">
     <div class="col-xs-12 col-lg-4 col-lg-offset-8 no-margin-right">
         <div id="subtotal-holder">
-            <ul class="tabled-data inverse-bold no-border">
-                <li>
-                    <label>cart subtotal</label>
-                    <div class="value ">@string.Format("{0:0,0}",@Model.Tinhtongtiensanpham()) Đồng</div>
-                </li>
-                <li>
-                    <label>shipping</label>
-                    <div class="value">
-                        <div class="radio-group">
-                            <input class="le-radio" type="radio" name="group1" value="free"> <div class="radio-label bold">Miễn phí  giao hàng</div><br>
-                            <input class="le-radio" type="radio" name="group1" value="local" checked>  <div class="radio-label">local delivery<br><span class="bold">$15</span></div>
-                        </div>
-                    </div>
-                </li>
-            </ul><!-- /.tabled-data -->
             <ul id="total-field" class="tabled-data inverse-bold ">
                 <li>
-                    <label>order total</label>
+                    <label>Total</label>
                     <div class="value">@string.Format("{0:0,0}",@Model.TinhtongtienCart()) Đồng</div>
                 </li>
             </ul><!-- /.tabled-data -->
