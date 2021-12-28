@@ -39,7 +39,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" Nullable="false" />
     <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
     <Property Name="PasswordHash" Type="nvarchar(max)" />
     <Property Name="SecurityStamp" Type="nvarchar(max)" />
@@ -57,6 +57,18 @@
     <Property Name="GioiTinh" Type="bit" />
     <Property Name="DiaChi" Type="nvarchar" MaxLength="256" />
     <Property Name="Avatar" Type="text" />
+    <Property Name="CreatedTime" Type="datetime" />
+    <Property Name="HomeTown" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BaiViet">
+    <Key>
+      <PropertyRef Name="MaBV" />
+    </Key>
+    <Property Name="MaBV" Type="nchar" MaxLength="5" Nullable="false" />
+    <Property Name="TieuDe" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="NoiDung" Type="ntext" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="Trang" Type="nchar" MaxLength="5" Nullable="false" />
   </EntityType>
   <EntityType Name="BinhLuan">
     <Key>
@@ -72,16 +84,6 @@
     <Property Name="DaTraLoi" Type="char" MaxLength="1" />
     <Property Name="Parent" Type="int" />
   </EntityType>
-  <EntityType Name="ChiTietDonHang">
-    <Key>
-      <PropertyRef Name="MaDH" />
-      <PropertyRef Name="MaSP" />
-    </Key>
-    <Property Name="MaDH" Type="nchar" MaxLength="5" Nullable="false" />
-    <Property Name="MaSP" Type="nchar" MaxLength="5" Nullable="false" />
-    <Property Name="SoLuong" Type="int" />
-    <Property Name="ThanhTien" Type="decimal" Precision="18" Scale="0" />
-  </EntityType>
   <EntityType Name="ConfigAPI">
     <Key>
       <PropertyRef Name="ID" />
@@ -92,6 +94,16 @@
     <Property Name="LinkAccessToken" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="LinkKiemTraLuongTon" Type="varchar" MaxLength="100" />
     <Property Name="LinkXacNhanGiaoHang" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ChiTietDonHang">
+    <Key>
+      <PropertyRef Name="MaDH" />
+      <PropertyRef Name="MaSP" />
+    </Key>
+    <Property Name="MaDH" Type="nchar" MaxLength="5" Nullable="false" />
+    <Property Name="MaSP" Type="nchar" MaxLength="5" Nullable="false" />
+    <Property Name="SoLuong" Type="int" />
+    <Property Name="ThanhTien" Type="decimal" Precision="18" Scale="0" />
   </EntityType>
   <EntityType Name="DanhsachdangkisanphamNCC">
     <Key>
@@ -124,7 +136,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ThuocTinh" Type="nvarchar" MaxLength="128" Nullable="false" />
     <Property Name="GiaTri" Type="ntext" />
   </EntityType>
@@ -229,6 +241,8 @@
     <Property Name="SoLuong" Type="int" />
     <Property Name="isnew" Type="bit" />
     <Property Name="ishot" Type="bit" />
+    <Property Name="BarcodeImg" Type="image" />
+    <Property Name="Barcode" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Sanphamcanmua">
     <Key>
@@ -272,6 +286,26 @@
     <Property Name="Action" Type="nvarchar" MaxLength="50" />
     <Property Name="Ngaythuchien" Type="datetime" />
   </EntityType>
+  <EntityType Name="Trang">
+    <Key>
+      <PropertyRef Name="MaTrang" />
+    </Key>
+    <Property Name="MaTrang" Type="nchar" MaxLength="5" Nullable="false" />
+    <Property Name="TenTrang" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ThuTu" Type="int" />
+  </EntityType>
+  <Association Name="FK_BaiViet_Trang">
+    <End Role="Trang" Type="Self.Trang" Multiplicity="1" />
+    <End Role="BaiViet" Type="Self.BaiViet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trang">
+        <PropertyRef Name="MaTrang" />
+      </Principal>
+      <Dependent Role="BaiViet">
+        <PropertyRef Name="Trang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_BinhLuan_AspNetUsers">
     <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
@@ -300,6 +334,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Config_NhaCC">
+    <End Role="NhaCungCap" Type="Self.NhaCungCap" Multiplicity="0..1" />
+    <End Role="ConfigAPI" Type="Self.ConfigAPI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhaCungCap">
+        <PropertyRef Name="MaNCC" />
+      </Principal>
+      <Dependent Role="ConfigAPI">
+        <PropertyRef Name="MaNCC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_ChiTietDonHang_DonHangKH">
     <End Role="DonHangKH" Type="Self.DonHangKH" Multiplicity="1">
       <OnDelete Action="Cascade" />
@@ -325,18 +371,6 @@
       </Principal>
       <Dependent Role="ChiTietDonHang">
         <PropertyRef Name="MaSP" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Config_NhaCC">
-    <End Role="NhaCungCap" Type="Self.NhaCungCap" Multiplicity="0..1" />
-    <End Role="ConfigAPI" Type="Self.ConfigAPI" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="NhaCungCap">
-        <PropertyRef Name="MaNCC" />
-      </Principal>
-      <Dependent Role="ConfigAPI">
-        <PropertyRef Name="MaNCC" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -435,7 +469,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_NhaCC_Netuser">
-    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="0..1" />
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="NhaCungCap" Type="Self.NhaCungCap" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="AspNetUsers">
@@ -570,9 +606,10 @@
     <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaiViet" EntityType="Self.BaiViet" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="BinhLuan" EntityType="Self.BinhLuan" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="ChiTietDonHang" EntityType="Self.ChiTietDonHang" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ConfigAPI" EntityType="Self.ConfigAPI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChiTietDonHang" EntityType="Self.ChiTietDonHang" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DanhsachdangkisanphamNCC" EntityType="Self.DanhsachdangkisanphamNCC" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DonHangKH" EntityType="Self.DonHangKH" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GiaoDien" EntityType="Self.GiaoDien" Schema="dbo" store:Type="Tables" />
@@ -588,6 +625,11 @@
     <EntitySet Name="SanPhamKhuyenMai" EntityType="Self.SanPhamKhuyenMai" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ThongSoKyThuat" EntityType="Self.ThongSoKyThuat" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Trackingaction" EntityType="Self.Trackingaction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trang" EntityType="Self.Trang" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BaiViet_Trang" Association="Self.FK_BaiViet_Trang">
+      <End Role="Trang" EntitySet="Trang" />
+      <End Role="BaiViet" EntitySet="BaiViet" />
+    </AssociationSet>
     <AssociationSet Name="FK_BinhLuan_AspNetUsers" Association="Self.FK_BinhLuan_AspNetUsers">
       <End Role="AspNetUsers" EntitySet="AspNetUsers" />
       <End Role="BinhLuan" EntitySet="BinhLuan" />
@@ -596,6 +638,10 @@
       <End Role="SanPham" EntitySet="SanPham" />
       <End Role="BinhLuan" EntitySet="BinhLuan" />
     </AssociationSet>
+    <AssociationSet Name="FK_Config_NhaCC" Association="Self.FK_Config_NhaCC">
+      <End Role="NhaCungCap" EntitySet="NhaCungCap" />
+      <End Role="ConfigAPI" EntitySet="ConfigAPI" />
+    </AssociationSet>
     <AssociationSet Name="FK_ChiTietDonHang_DonHangKH" Association="Self.FK_ChiTietDonHang_DonHangKH">
       <End Role="DonHangKH" EntitySet="DonHangKH" />
       <End Role="ChiTietDonHang" EntitySet="ChiTietDonHang" />
@@ -603,10 +649,6 @@
     <AssociationSet Name="FK_ChiTietDonHang_SanPham" Association="Self.FK_ChiTietDonHang_SanPham">
       <End Role="SanPham" EntitySet="SanPham" />
       <End Role="ChiTietDonHang" EntitySet="ChiTietDonHang" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Config_NhaCC" Association="Self.FK_Config_NhaCC">
-      <End Role="NhaCungCap" EntitySet="NhaCungCap" />
-      <End Role="ConfigAPI" EntitySet="ConfigAPI" />
     </AssociationSet>
     <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
       <End Role="AspNetUsers" EntitySet="AspNetUsers" />

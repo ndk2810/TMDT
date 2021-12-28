@@ -7,7 +7,7 @@ namespace EC_TH2012_J.Models
 {
     public class Giohang
     {
-        private List<Chitietgiohang> Cart;
+        public List<Chitietgiohang> Cart { get; set; }
         public double phiVanChuyen = 0;
         public Giohang()
         {

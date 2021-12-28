@@ -52,45 +52,46 @@
             <section id="shipping-address">
                 <h2 class="border h1">Phương thức thanh toán</h2>
             </section><!-- /#shipping-address -->
-             
 
-            <div id="payment-method-options">
-                    @*<div class="payment-method-option">
-                        <input class="le-radio" type="radio" name="group2" value="Direct">
-                        <div class="radio-label bold ">
-                            Thẻ ngân hàng<br>
-                        </div>
-                    </div>*@
 
-                    <div class="payment-method-option">
-                        <input class="le-radio" type="radio" name="group2" value="cheque">
-                        <div class="radio-label bold ">Tiền mặt</div>
-                    </div><!-- /.payment-method-option -->
+        <div id="payment-method-options">
+            @*<div class="payment-method-option">
+            <input class="le-radio" type="radio" name="group2" value="Direct">
+            <div class="radio-label bold ">
+                Thẻ ngân hàng<br>
+            </div>
+        </div>*@
 
-                    @*<div class="payment-method-option">
-                        <input class="le-radio" type="radio" name="group2" value="paypal">
-                        <div class="radio-label bold ">PayPal</div>
+            <div class="payment-method-option">
+                <input class="le-radio" type="radio" name="group2" value="cheque">
+                <div class="radio-label bold ">Tiền mặt</div>
+            </div><!-- /.payment-method-option -->
+
+            <div class="payment-method-option">
+                                
+                <div class="row">
+                    <div class="container col-md-2 col-md-offset-5">
+                        <h5>Thanh toán bằng Stripe</h5>
                         <form action="/Home/Charge" method="POST">
-                            <article>
-                                <label>Amount: @ViewBag.GioHang.TinhtongtienCart() VND</label>
-                            </article>
-                            <script src="//checkout.stripe.com/v2/checkout.js"
-                                    class="stripe-button"
-                                    data-key="@ViewBag.StripePublishKey"
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                    data-key="pk_test_51IzjQtAHeeyUAi3R0NUAODbvvHUsbSnR28rxbiSZOC2MVmk1M5d835wj7Nh6GwMCERYO4cgUwVt7V9elmc27uFC7002UAaioYH"
+                                    data-amount=""
+                                    data-name="Guitar Shop"
+                                    data-description="Thanh toán Guitar"
+                                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
                                     data-locale="auto"
-                                    data-description="Sample Charge"
-                                    data-amount="@ViewBag.GioHang.TinhtongtienCart()">
+                                    data-zip-code="false"
+                                    data-currency="vnd">
                             </script>
                         </form>
-                    </div>*@
-            </div><!-- /#payment-method-options -->
+                    </div>
+                </div>
+            </div>
 
             <div class="place-order-button">
                 <input type="submit" class="le-button big" value="Đặt hàng" />
             </div><!-- /.place-order-button -->
-        }
-                  
         </div><!-- /.col -->
-    </div><!-- /.container -->
+        }</div><!-- /.container -->
 </section><!-- /#checkout-page -->
 

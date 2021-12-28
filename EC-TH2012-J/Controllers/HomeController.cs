@@ -5,6 +5,7 @@ using Stripe;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using System.Web.Configuration;
+using System;
 
 namespace EC_TH2012_J.Controllers
 {
@@ -23,24 +24,6 @@ namespace EC_TH2012_J.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Charge(string stripeToken, string stripeEmail)
-        {
-            //Stripe.StripeConfiguration.ApiKey = "pk_test_51IzjQtAHeeyUAi3R0NUAODbvvHUsbSnR28rxbiSZOC2MVmk1M5d835wj7Nh6GwMCERYO4cgUwVt7V9elmc27uFC7002UAaioYH";
-            Stripe.StripeConfiguration.ApiKey = "sk_test_51IzjQtAHeeyUAi3RSHbt1sPob40b8icOzAMQYELld6hLGtJvMS1oqZtcvx0vcetqLSQMrgLS8nPeurvLJVMI35Mb00vo0mXV7B";
-
-            var myCharge = new Stripe.ChargeCreateOptions();
-            // always set these properties
-            myCharge.Amount = 500;
-            myCharge.Currency = "USD";
-            myCharge.ReceiptEmail = stripeEmail;
-            myCharge.Description = "Sample Charge";
-            myCharge.Source = stripeToken;
-            myCharge.Capture = true;
-            var chargeService = new Stripe.ChargeService();
-            Charge stripeCharge = chargeService.Create(myCharge);
-            return View();
-        }
 
         //chuyen locale
         public ActionResult ChangeLanguage(string lang)
@@ -116,6 +99,8 @@ namespace EC_TH2012_J.Controllers
             {
                 DonhangKHModel dhmodel = new DonhangKHModel();
                 dhmodel.Luudonhang(dh, User.Identity.GetUserId(), ManagerObject.getIntance().giohang);
+
+                ManagerObject.getIntance().giohang.Cart.Clear();
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -180,6 +165,29 @@ namespace EC_TH2012_J.Controllers
         {
             return PartialView("_RecentlyViewPartial", ManagerObject.getIntance().Laydanhsachsanphammoixem());
         }
+        public ActionResult Charge()
+        {
+            return View();
+        }
 
+        [HttpPost]
+        public ActionResult Charge(string stripeToken, string stripeEmail)
+        {
+            var myCharge = new ChargeCreateOptions();
+
+            // always set these properties
+            myCharge.Amount = 1500000;
+            myCharge.Currency = "vnd";
+
+            myCharge.ReceiptEmail = stripeEmail;
+            myCharge.Description = "Thanh toán guitar";
+            myCharge.Source = stripeToken;
+            myCharge.Capture = true;
+
+            var chargeService = new ChargeService();
+            Charge stripeCharge = chargeService.Create(myCharge);
+
+            return View();
+        }
     }
 }

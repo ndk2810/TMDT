@@ -107,6 +107,12 @@
       <End Role="Sanphamcanmua" EntitySet="Sanphamcanmuas" />
       <End Role="DanhsachdangkisanphamNCC" EntitySet="DanhsachdangkisanphamNCCs" />
     </AssociationSet>
+    <EntitySet Name="Trangs" EntityType="Model.Trang" />
+    <EntitySet Name="BaiViets" EntityType="Model.BaiViet" />
+    <AssociationSet Name="FK_BaiViet_Trang" Association="Model.FK_BaiViet_Trang">
+      <End Role="Trang" EntitySet="Trangs" />
+      <End Role="BaiViet" EntitySet="BaiViets" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="AspNetRole">
     <Key>
@@ -142,7 +148,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
-    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
     <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -166,6 +172,8 @@
     <NavigationProperty Name="DonHangKHs" Relationship="Model.FK_DonHangKH_AspNetUsers" FromRole="AspNetUser" ToRole="DonHangKH" />
     <NavigationProperty Name="AspNetRoles" Relationship="Model.AspNetUserRoles" FromRole="AspNetUser" ToRole="AspNetRole" />
     <NavigationProperty Name="NhaCungCaps" Relationship="Model.FK_NhaCC_Netuser" FromRole="AspNetUser" ToRole="NhaCungCap" />
+    <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+    <Property Name="HomeTown" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="BinhLuan">
     <Key>
@@ -340,6 +348,8 @@
     <NavigationProperty Name="ThongSoKyThuats" Relationship="Model.FK_ThongSoKyThuat_SanPham" FromRole="SanPham" ToRole="ThongSoKyThuat" />
     <Property Name="GiaGoc" Type="Decimal" Precision="18" Scale="0" />
     <NavigationProperty Name="Sanphamcanmuas" Relationship="Model.PK_SPCM_SP" FromRole="SanPham" ToRole="Sanphamcanmua" />
+    <Property Name="BarcodeImg" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Barcode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="SanPhamKhuyenMai">
     <Key>
@@ -677,6 +687,38 @@
       </Principal>
       <Dependent Role="DanhsachdangkisanphamNCC">
         <PropertyRef Name="MaSPCanMua" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Trang">
+    <Key>
+      <PropertyRef Name="MaTrang" />
+    </Key>
+    <Property Name="MaTrang" Type="String" Nullable="false" MaxLength="5" FixedLength="true" Unicode="true" />
+    <Property Name="TenTrang" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ThuTu" Type="Int32" />
+    <NavigationProperty Name="BaiViets" Relationship="Model.FK_BaiViet_Trang" FromRole="Trang" ToRole="BaiViet" />
+  </EntityType>
+  <EntityType Name="BaiViet">
+    <Key>
+      <PropertyRef Name="MaBV" />
+    </Key>
+    <Property Name="MaBV" Type="String" Nullable="false" MaxLength="5" FixedLength="true" Unicode="true" />
+    <Property Name="TieuDe" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NgayTao" Type="DateTime" Precision="3" />
+    <Property Name="Trang" Type="String" Nullable="false" MaxLength="5" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Trang1" Relationship="Model.FK_BaiViet_Trang" FromRole="BaiViet" ToRole="Trang" />
+  </EntityType>
+  <Association Name="FK_BaiViet_Trang">
+    <End Type="Model.Trang" Role="Trang" Multiplicity="1" />
+    <End Type="Model.BaiViet" Role="BaiViet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trang">
+        <PropertyRef Name="MaTrang" />
+      </Principal>
+      <Dependent Role="BaiViet">
+        <PropertyRef Name="Trang" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

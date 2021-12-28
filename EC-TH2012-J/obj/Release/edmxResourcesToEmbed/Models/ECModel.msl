@@ -31,6 +31,8 @@
     <EntitySetMapping Name="AspNetUsers">
       <EntityTypeMapping TypeName="Model.AspNetUser">
         <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="HomeTown" ColumnName="HomeTown" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
           <ScalarProperty Name="Avatar" ColumnName="Avatar" />
           <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
           <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
@@ -195,6 +197,8 @@
     <EntitySetMapping Name="SanPhams">
       <EntityTypeMapping TypeName="Model.SanPham">
         <MappingFragment StoreEntitySet="SanPham">
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="BarcodeImg" ColumnName="BarcodeImg" />
           <ScalarProperty Name="GiaGoc" ColumnName="GiaGoc" />
           <ScalarProperty Name="ishot" ColumnName="ishot" />
           <ScalarProperty Name="isnew" ColumnName="isnew" />
@@ -286,6 +290,26 @@
           <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
           <ScalarProperty Name="MaSPCanMua" ColumnName="MaSPCanMua" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trangs">
+      <EntityTypeMapping TypeName="Model.Trang">
+        <MappingFragment StoreEntitySet="Trang">
+          <ScalarProperty Name="ThuTu" ColumnName="ThuTu" />
+          <ScalarProperty Name="TenTrang" ColumnName="TenTrang" />
+          <ScalarProperty Name="MaTrang" ColumnName="MaTrang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BaiViets">
+      <EntityTypeMapping TypeName="Model.BaiViet">
+        <MappingFragment StoreEntitySet="BaiViet">
+          <ScalarProperty Name="Trang" ColumnName="Trang" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="MaBV" ColumnName="MaBV" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
